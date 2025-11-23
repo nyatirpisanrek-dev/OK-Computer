@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowUp } from 'lucide-react'
 // Adjust import path casing for Button to match actual filename casing to fix build error
-import { Button } from './button'
+import { Button } from './Button'
 
 export function BackToTopButton() {
   const [isVisible, setIsVisible] = useState(false)

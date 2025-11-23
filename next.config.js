@@ -1,14 +1,10 @@
 /** @type {import('next').NextConfig} */
-const path = require('path')
-
 const nextConfig = {
   images: {
-    domains: ['example.com'], // Add domains for images if needed
+    domains: ['example.com'],
   },
-  webpack(config) {
-    config.resolve.alias['@'] = path.resolve(__dirname, 'src')
-    return config
-  },
+  // Enable Turbopack explicitly; remove custom webpack config for compatibility
+  turbopack: {},
 }
 
 module.exports = nextConfig

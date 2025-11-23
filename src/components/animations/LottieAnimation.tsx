@@ -16,7 +16,7 @@ export function LottieAnimation({
   loop = true,
   autoplay = true,
 }: LottieAnimationProps) {
-  const lottieRef = useRef<any>()
+  const lottieRef = useRef<any>(null)
 
   useEffect(() => {
     if (lottieRef.current) {

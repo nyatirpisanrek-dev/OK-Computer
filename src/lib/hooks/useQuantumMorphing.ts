@@ -19,11 +19,11 @@ interface QuantumConfig {
 }
 
 export function useQuantumMorphing(
-  elementRef: React.RefObject<HTMLElement>,
+  elementRef: React.RefObject<HTMLElement | null>,
   config: QuantumConfig
 ) {
   const quantumStatesRef = useRef<QuantumState[]>([])
-  const animationRef = useRef<number>()
+  const animationRef = useRef<number | null>(null)
   const timeRef = useRef(0)
 
   const initializeQuantumStates = useCallback(() => {

@@ -21,8 +21,8 @@ interface HolographicConfig {
   flicker: boolean
 }
 
-export function useHolographicInterface(
-  containerRef: React.RefObject<HTMLElement>,
+export function useHolographicInterface<T extends HTMLElement | null = HTMLElement | null>(
+  containerRef: React.RefObject<T>,
   config: HolographicConfig
 ) {
   const layersRef = useRef<HologramLayer[]>([])

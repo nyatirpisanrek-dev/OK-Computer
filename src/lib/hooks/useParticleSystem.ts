@@ -25,11 +25,11 @@ interface ParticleSystemConfig {
 }
 
 export function useParticleSystem(
-  canvasRef: React.RefObject<HTMLCanvasElement>,
+  canvasRef: React.RefObject<HTMLCanvasElement | null>,
   config: ParticleSystemConfig
 ) {
   const particlesRef = useRef<Particle[]>([])
-  const animationRef = useRef<number>()
+  const animationRef = useRef<number | null>(null)
   const mouseRef = useRef({ x: 0, y: 0 })
 
   const createParticle = useCallback((x: number, y: number): Particle => {

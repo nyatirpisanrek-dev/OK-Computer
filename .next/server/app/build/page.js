@@ -1,1 +1,16 @@
-"use strict";(()=>{var e={};e.id=788,e.ids=[788],e.modules={2934:e=>{e.exports=require("next/dist/client/components/action-async-storage.external.js")},4580:e=>{e.exports=require("next/dist/client/components/request-async-storage.external.js")},5869:e=>{e.exports=require("next/dist/client/components/static-generation-async-storage.external.js")},399:e=>{e.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},8885:(e,r,n)=>{n.r(r),n.d(r,{GlobalError:()=>s.a,__next_app__:()=>c,originalPathname:()=>u,pages:()=>l,routeModule:()=>m,tree:()=>d}),n(2547),n(7584),n(7629),n(5866);var t=n(3191),o=n(8716),i=n(7922),s=n.n(i),a=n(5231),p={};for(let e in a)0>["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(e)&&(p[e]=()=>a[e]);n.d(r,p);let d=["",{children:["build",{children:["__PAGE__",{},{page:[()=>Promise.resolve().then(n.bind(n,2547)),"D:\\Coding\\komponenpc\\src\\app\\build\\page.tsx"]}]},{}]},{layout:[()=>Promise.resolve().then(n.bind(n,7584)),"D:\\Coding\\komponenpc\\src\\app\\layout.tsx"],error:[()=>Promise.resolve().then(n.bind(n,7629)),"D:\\Coding\\komponenpc\\src\\app\\error.tsx"],"not-found":[()=>Promise.resolve().then(n.t.bind(n,5866,23)),"next/dist/client/components/not-found-error"]}],l=["D:\\Coding\\komponenpc\\src\\app\\build\\page.tsx"],u="/build/page",c={require:n,loadChunk:()=>Promise.resolve()},m=new t.AppPageRouteModule({definition:{kind:o.x.APP_PAGE,page:"/build/page",pathname:"/build",bundlePath:"",filename:"",appPaths:[]},userland:{loaderTree:d}})},2547:(e,r,n)=>{n.r(r),n.d(r,{default:()=>i});var t=n(9510),o=n(4331);function i(){return t.jsx("div",{className:"min-h-screen",children:t.jsx(o.t,{})})}}};var r=require("../../webpack-runtime.js");r.C(e);var n=e=>r(r.s=e),t=r.X(0,[442,854,530],()=>n(8885));module.exports=t})();
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/build/page.js")
+R.c("server/chunks/ssr/_26440e04._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__a0199137._.js")
+R.c("server/chunks/ssr/_f9dbab82._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0c36daa6._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__43a9d066._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__22458bd1._.js")
+R.c("server/chunks/ssr/5e9cd_next_dist_client_components_builtin_global-error_5cedd710.js")
+R.c("server/chunks/ssr/[root-of-the-server]__5cde2bee._.js")
+R.c("server/chunks/ssr/src_app_error_tsx_ef715cc8._.js")
+R.c("server/chunks/ssr/5e9cd_next_dist_client_components_65e9aa7d._.js")
+R.c("server/chunks/ssr/5e9cd_next_dist_client_components_builtin_forbidden_d19d1144.js")
+R.c("server/chunks/ssr/5e9cd_next_dist_client_components_builtin_unauthorized_dc94441d.js")
+R.c("server/chunks/ssr/_next-internal_server_app_build_page_actions_611b11d6.js")
+R.m(79983)
+module.exports=R.m(79983).exports

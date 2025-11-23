@@ -1,1 +1,16 @@
-(()=>{var e={};e.id=702,e.ids=[702],e.modules={2934:e=>{"use strict";e.exports=require("next/dist/client/components/action-async-storage.external.js")},4580:e=>{"use strict";e.exports=require("next/dist/client/components/request-async-storage.external.js")},5869:e=>{"use strict";e.exports=require("next/dist/client/components/static-generation-async-storage.external.js")},399:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},4737:(e,r,t)=>{"use strict";t.r(r),t.d(r,{GlobalError:()=>a.a,__next_app__:()=>u,originalPathname:()=>c,pages:()=>l,routeModule:()=>m,tree:()=>p}),t(8256),t(7584),t(7629),t(5866);var n=t(3191),o=t(8716),s=t(7922),a=t.n(s),i=t(5231),d={};for(let e in i)0>["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(e)&&(d[e]=()=>i[e]);t.d(r,d);let p=["",{children:["dashboard",{children:["__PAGE__",{},{page:[()=>Promise.resolve().then(t.bind(t,8256)),"D:\\Coding\\komponenpc\\src\\app\\dashboard\\page.tsx"]}]},{}]},{layout:[()=>Promise.resolve().then(t.bind(t,7584)),"D:\\Coding\\komponenpc\\src\\app\\layout.tsx"],error:[()=>Promise.resolve().then(t.bind(t,7629)),"D:\\Coding\\komponenpc\\src\\app\\error.tsx"],"not-found":[()=>Promise.resolve().then(t.t.bind(t,5866,23)),"next/dist/client/components/not-found-error"]}],l=["D:\\Coding\\komponenpc\\src\\app\\dashboard\\page.tsx"],c="/dashboard/page",u={require:t,loadChunk:()=>Promise.resolve()},m=new n.AppPageRouteModule({definition:{kind:o.x.APP_PAGE,page:"/dashboard/page",pathname:"/dashboard",bundlePath:"",filename:"",appPaths:[]},userland:{loaderTree:p}})},9877:(e,r,t)=>{Promise.resolve().then(t.bind(t,2131))},8256:(e,r,t)=>{"use strict";t.r(r),t.d(r,{default:()=>s});var n=t(9510),o=t(9587);function s(){return n.jsx("div",{className:"min-h-screen",children:n.jsx(o.A,{})})}}};var r=require("../../webpack-runtime.js");r.C(e);var t=e=>r(r.s=e),n=r.X(0,[442,106,854,743],()=>t(4737));module.exports=n})();
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/dashboard/page.js")
+R.c("server/chunks/ssr/_7782d57b._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__a0199137._.js")
+R.c("server/chunks/ssr/_e8f7f83e._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0c36daa6._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__43a9d066._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__22458bd1._.js")
+R.c("server/chunks/ssr/5e9cd_next_dist_client_components_builtin_global-error_5cedd710.js")
+R.c("server/chunks/ssr/[root-of-the-server]__5cde2bee._.js")
+R.c("server/chunks/ssr/src_app_error_tsx_ef715cc8._.js")
+R.c("server/chunks/ssr/5e9cd_next_dist_client_components_65e9aa7d._.js")
+R.c("server/chunks/ssr/5e9cd_next_dist_client_components_builtin_forbidden_d19d1144.js")
+R.c("server/chunks/ssr/5e9cd_next_dist_client_components_builtin_unauthorized_dc94441d.js")
+R.c("server/chunks/ssr/_next-internal_server_app_dashboard_page_actions_7f01ccec.js")
+R.m(61258)
+module.exports=R.m(61258).exports

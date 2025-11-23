@@ -1,1 +1,13 @@
-{"/_not-found/page":"/_not-found","/[locale]/checkout/page":"/[locale]/checkout","/[locale]/build/page":"/[locale]/build","/about/page":"/about","/build/page":"/build","/components/page":"/components","/component/[id]/page":"/component/[id]","/dashboard/page":"/dashboard","/page":"/","/profile/page":"/profile"}
+{
+  "/[locale]/build/page": "/[locale]/build",
+  "/[locale]/checkout/page": "/[locale]/checkout",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/build/page": "/build",
+  "/component/[id]/page": "/component/[id]",
+  "/components/page": "/components",
+  "/dashboard/page": "/dashboard",
+  "/page": "/",
+  "/profile/page": "/profile"
+}

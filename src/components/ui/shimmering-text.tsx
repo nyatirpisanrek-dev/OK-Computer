@@ -8,7 +8,7 @@ interface ShimmeringTextProps {
   className?: string;
   duration?: number;
   repeatDelay?: number;
-  tag?: keyof JSX.IntrinsicElements;
+  tag?: React.ElementType;
 }
 
 export const ShimmeringText: React.FC<ShimmeringTextProps> = ({
