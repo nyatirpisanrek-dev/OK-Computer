@@ -1,5 +1,6 @@
 'use client'
 
+
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem } from '@/components/ui/pagination'
@@ -40,7 +41,7 @@ export default function PaginationDemo({ currentPage, totalPages, onPageChange }
           {pageNumbers.map((page) => (
             <PaginationItem key={page}>
               <Button
-                variant={currentPage === page ? 'primary' : 'ghost'}
+                variant={currentPage === page ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => onPageChange(page)}
                 className={currentPage === page ? 'bg-primary-500 text-white' : ''}

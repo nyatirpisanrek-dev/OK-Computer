@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useEffect, useCallback } from 'react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/Button'
+import { Input } from '@/components/ui/Input'
 import { ThemeToggle } from '@/components/ui/ThemeToggle'
 import {
   NavigationMenu,

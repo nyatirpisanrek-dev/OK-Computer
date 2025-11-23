@@ -1,4 +1,12 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/[locale]/checkout/page": "app/[locale]/checkout/page.js",
+  "/[locale]/build/page": "app/[locale]/build/page.js",
+  "/about/page": "app/about/page.js",
+  "/build/page": "app/build/page.js",
+  "/components/page": "app/components/page.js",
+  "/component/[id]/page": "app/component/[id]/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
   "/page": "app/page.js",
-  "/component/[id]/page": "app/component/[id]/page.js"
+  "/profile/page": "app/profile/page.js"
 }

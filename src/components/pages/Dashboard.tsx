@@ -475,7 +475,7 @@ export function Dashboard() {
               whileTap={{ scale: 0.95 }}
             >
               <Button
-                variant={filters.category === category ? "primary" : "secondary"}
+                variant={filters.category === category ? "secondary" : "secondary"}
                 onClick={() => setFilters({ ...filters, category: filters.category === category ? undefined : category })}
                 className="px-6 py-3"
               >

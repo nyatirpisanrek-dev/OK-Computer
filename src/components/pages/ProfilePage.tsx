@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
+import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
@@ -44,7 +44,7 @@ export function ProfilePage() {
         >
           <Card className="relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 via-secondary-500/10 to-accent-500/10" />
-            <CardContent className="relative p-8">
+            <div className="relative p-8">
               <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                 <div className="relative">
                   <Avatar className="w-32 h-32 border-4 border-white dark:border-neutral-800 shadow-xl">
@@ -94,7 +94,7 @@ export function ProfilePage() {
                   </div>
                 </div>
               </div>
-            </CardContent>
+            </div>
           </Card>
         </motion.div>
 
@@ -127,32 +127,31 @@ export function ProfilePage() {
             {/* Personal Information */}
             <TabsContent value="personal">
               <Card>
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="flex items-center gap-2">
-                      <User className="w-5 h-5" />
-                      Personal Information
-                    </CardTitle>
-                    {!isEditing ? (
-                      <Button onClick={() => setIsEditing(true)} variant="outline" size="sm">
-                        <Edit className="w-4 h-4 mr-2" />
-                        Edit
-                      </Button>
-                    ) : (
-                      <div className="flex gap-2">
-                        <Button onClick={handleSave} size="sm">
-                          <Save className="w-4 h-4 mr-2" />
-                          Save
-                        </Button>
-                        <Button onClick={handleCancel} variant="outline" size="sm">
-                          <X className="w-4 h-4 mr-2" />
-                          Cancel
-                        </Button>
-                      </div>
-                    )}
+                <div className="flex items-center justify-between p-6 border-b border-muted">
+                  <div className="flex items-center gap-2">
+                    <User className="w-5 h-5" />
+                    <h3 className="text-lg font-semibold">Personal Information</h3>
                   </div>
-                </CardHeader>
-                <CardContent className="space-y-6">
+                  {!isEditing ? (
+                    <Button onClick={() => setIsEditing(true)} variant="outline" size="sm">
+                      <Edit className="w-4 h-4 mr-2" />
+                      Edit
+                    </Button>
+                  ) : (
+                    <div className="flex gap-2">
+                      <Button onClick={handleSave} size="sm">
+                        <Save className="w-4 h-4 mr-2" />
+                        Save
+                      </Button>
+                      <Button onClick={handleCancel} variant="outline" size="sm">
+                        <X className="w-4 h-4 mr-2" />
+                        Cancel
+                      </Button>
+                    </div>
+                  )}
+                </div>
+
+                <div className="space-y-6 p-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-sm font-medium">Full Name</label>
@@ -235,20 +234,18 @@ export function ProfilePage() {
                       </div>
                     )}
                   </div>
-                </CardContent>
+                </div>
               </Card>
             </TabsContent>
 
             {/* Security Settings */}
             <TabsContent value="security">
               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Shield className="w-5 h-5" />
-                    Security Settings
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
+                <div className="flex items-center gap-2 p-6 border-b border-muted">
+                  <Shield className="w-5 h-5" />
+                  <h3 className="text-lg font-semibold">Security Settings</h3>
+                </div>
+                <div className="space-y-6 p-6">
                   <div className="space-y-4">
                     <div>
                       <h4 className="font-medium mb-2">Change Password</h4>
@@ -276,23 +273,21 @@ export function ProfilePage() {
                       <Button variant="outline">View Sessions</Button>
                     </div>
                   </div>
-                </CardContent>
+                </div>
               </Card>
             </TabsContent>
 
             {/* Notifications */}
             <TabsContent value="notifications">
               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Bell className="w-5 h-5" />
-                    Notification Preferences
-                  </CardTitle>
-                  <p className="text-sm text-muted-foreground">
-                    Choose what notifications you want to receive
-                  </p>
-                </CardHeader>
-                <CardContent className="space-y-6">
+                <div className="flex items-center gap-2 p-6 border-b border-muted">
+                  <Bell className="w-5 h-5" />
+                  <h3 className="text-lg font-semibold">Notification Preferences</h3>
+                </div>
+                <p className="text-sm text-muted-foreground px-6">
+                  Choose what notifications you want to receive
+                </p>
+                <div className="space-y-6 p-6">
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
                       <div>
@@ -326,23 +321,21 @@ export function ProfilePage() {
                       <input type="checkbox" className="rounded" />
                     </div>
                   </div>
-                </CardContent>
+                </div>
               </Card>
             </TabsContent>
 
             {/* Billing */}
             <TabsContent value="billing">
               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <CreditCard className="w-5 h-5" />
-                    Billing & Subscription
-                  </CardTitle>
-                  <p className="text-sm text-muted-foreground">
-                    Manage your subscription and payment methods
-                  </p>
-                </CardHeader>
-                <CardContent className="space-y-6">
+                <div className="flex items-center gap-2 p-6 border-b border-muted">
+                  <CreditCard className="w-5 h-5" />
+                  <h3 className="text-lg font-semibold">Billing & Subscription</h3>
+                </div>
+                <p className="text-sm text-muted-foreground px-6">
+                  Manage your subscription and payment methods
+                </p>
+                <div className="space-y-6 p-6">
                   <div className="space-y-4">
                     <div className="p-4 border rounded-lg">
                       <div className="flex items-center justify-between mb-2">
@@ -388,7 +381,7 @@ export function ProfilePage() {
                       </div>
                     </div>
                   </div>
-                </CardContent>
+                </div>
               </Card>
             </TabsContent>
           </Tabs>

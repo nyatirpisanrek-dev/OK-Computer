@@ -1,8 +1,9 @@
+
 'use client';
 
 import * as React from 'react';
 import { Checkbox as CheckboxPrimitive } from 'radix-ui';
-import { motion, SVGMotionProps, type HTMLMotionProps } from 'motion/react';
+import { motion, SVGMotionProps, type HTMLMotionProps } from 'framer-motion';
 
 import { getStrictContext } from '@/lib/get-strict-context';
 import { useControlledState } from '@/hooks/use-controlled-state';
@@ -35,7 +36,7 @@ function Checkbox({
   });
 
   return (
-    <CheckboxProvider value={{ isChecked, setIsChecked }}>
+    <CheckboxProvider value={{ isChecked: isChecked!, setIsChecked }}>
       <CheckboxPrimitive.Root
         defaultChecked={defaultChecked}
         checked={checked}
@@ -72,7 +73,7 @@ function CheckboxIndicator(props: CheckboxIndicatorProps) {
         strokeWidth="3.5"
         stroke="currentColor"
         initial="unchecked"
-        animate={isChecked ? 'checked' : 'unchecked'}
+        animate={isChecked! ? 'checked' : 'unchecked'}
         {...props}
       >
         {isChecked === 'indeterminate' ? (
